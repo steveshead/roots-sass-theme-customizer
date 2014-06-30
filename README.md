@@ -1,4 +1,4 @@
-roots-sass-theme-customizer
+Theme Customizer using the Roots (sass) Wordpress theme.
 ===========================
 
 Wordpress Theme Customizer custom controls using the Roots (sass) Wordpress theme
