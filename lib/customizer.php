@@ -324,6 +324,141 @@ $wp_customize->add_section( 'header_settings_section', array(
 	      		'settings' => 'body_font_color',
 				'priority' => 3,
 	      	) ) );	
+			
+			$wp_customize->add_setting( 'body_font_size', array(
+					'default' => '',
+			    ) );
+
+			$wp_customize->add_control( 'body_font_size', array(
+			        'label' => 'Body Font Size',
+			        'section' => 'typography_section',
+			        'type' => 'text',
+					'priority' => 4,
+			    ) );
+				
+	 		$wp_customize->add_setting( 'h1_font', array(
+	  		        'default' => 'Helvetica Neue',
+	  		    ) );
+
+	  		$wp_customize->add_control( 'h1_font', array(
+	  		        'type' => 'select',
+	  		        'label' => 'H1 Font',
+	  		        'section' => 'typography_section',
+					'priority' => 5,
+	  		        'choices' => array(
+	  		            'Helvetica Neue' => 'Helvetica Neue',
+	  		            'Verdana' => 'Verdana',
+	  		            'Georgia' => 'Georgia',
+	  		            'Palatino Linotype' => 'Palatino',
+						'Comic Sans MS' => 'Comic Sans',
+						'Impact' => 'Impact',
+						'Lucida Sans Unicode' => 'Lucida Sans',
+						'Lucida Console' => 'Lucida Console',
+						'Tahoma' => 'Tahoma',
+						'Trebuchet MS' => 'Trebuchet MS',
+						'Arial' => 'Arial',
+						'Courier New' => 'Courier New',
+						'Times New Roman' => 'Times New Roman',
+	  		   ),) );
+	   
+	    	$wp_customize->add_setting( 'h1_font_weight', array(
+	     		    'default' => '400',
+	     	) );
+	
+	  		$wp_customize->add_control( 'h1_font_weight', array(
+	  		        'type' => 'select',
+	  		        'label' => 'H1 Font Weight',
+	  		        'section' => 'typography_section',
+					'priority' => 6,
+	  		        'choices' => array(
+	  		            '300' => 'Light',
+	  		            '400' => 'Normal',
+	  		            '700' => 'Bold',
+	  		   ),) );
+	   
+	      	$wp_customize->add_setting( 'h1_font_color', array(
+	      		'default' => '#333333'
+	      	) );
+
+	      	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'h1_font_color', array(
+	      		'label' => 'H1 Font Color',
+	      		'section' => 'typography_section',
+	      		'settings' => 'h1_font_color',
+				'priority' => 7,
+	      	) ) );	
+	
+			$wp_customize->add_setting( 'h1_font_size', array(
+					'default' => '',
+			    ) );
+
+			$wp_customize->add_control( 'h1_font_size', array(
+			        'label' => 'H1 Font Size',
+			        'section' => 'typography_section',
+			        'type' => 'text',
+					'priority' => 8,
+			    ) );
+				
+		 		$wp_customize->add_setting( 'h2_font', array(
+		  		        'default' => 'Helvetica Neue',
+		  		    ) );
+
+		  		$wp_customize->add_control( 'h2_font', array(
+		  		        'type' => 'select',
+		  		        'label' => 'H2 Font',
+		  		        'section' => 'typography_section',
+						'priority' => 9,
+		  		        'choices' => array(
+		  		            'Helvetica Neue' => 'Helvetica Neue',
+		  		            'Verdana' => 'Verdana',
+		  		            'Georgia' => 'Georgia',
+		  		            'Palatino Linotype' => 'Palatino',
+							'Comic Sans MS' => 'Comic Sans',
+							'Impact' => 'Impact',
+							'Lucida Sans Unicode' => 'Lucida Sans',
+							'Lucida Console' => 'Lucida Console',
+							'Tahoma' => 'Tahoma',
+							'Trebuchet MS' => 'Trebuchet MS',
+							'Arial' => 'Arial',
+							'Courier New' => 'Courier New',
+							'Times New Roman' => 'Times New Roman',
+		  		   ),) );
+	   
+		    	$wp_customize->add_setting( 'h2_font_weight', array(
+		     		    'default' => '400',
+		     	) );
+	
+		  		$wp_customize->add_control( 'h2_font_weight', array(
+		  		        'type' => 'select',
+		  		        'label' => 'H2 Font Weight',
+		  		        'section' => 'typography_section',
+						'priority' => 10,
+		  		        'choices' => array(
+		  		            '300' => 'Light',
+		  		            '400' => 'Normal',
+		  		            '700' => 'Bold',
+		  		   ),) );
+	   
+		      	$wp_customize->add_setting( 'h2_font_color', array(
+		      		'default' => '#333333'
+		      	) );
+
+		      	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'h2_font_color', array(
+		      		'label' => 'H2 Font Color',
+		      		'section' => 'typography_section',
+		      		'settings' => 'h2_font_color',
+					'priority' => 11,
+		      	) ) );	
+	
+				$wp_customize->add_setting( 'h2_font_size', array(
+						'default' => '',
+				    ) );
+
+				$wp_customize->add_control( 'h2_font_size', array(
+				        'label' => 'H2 Font Size',
+				        'section' => 'typography_section',
+				        'type' => 'text',
+						'priority' => 12,
+				    ) );
 		   
     		$wp_customize->add_setting( 'paragraph_font', array(
      		        'default' => 'Helvetica Neue',
@@ -333,7 +468,7 @@ $wp_customize->add_section( 'header_settings_section', array(
      		        'type' => 'select',
      		        'label' => 'Paragraph Font',
      		        'section' => 'typography_section',
-					'priority' => 4,
+					'priority' => 13,
      		        'choices' => array(
      		            'Helvetica Neue' => 'Helvetica Neue',
      		            'Verdana' => 'Verdana',
@@ -358,7 +493,7 @@ $wp_customize->add_section( 'header_settings_section', array(
      		        'type' => 'select',
      		        'label' => 'Paragraph Font Weight',
      		        'section' => 'typography_section',
-					'priority' => 5,
+					'priority' => 14,
      		        'choices' => array(
      		            '300' => 'Light',
      		            '400' => 'Normal',
@@ -373,8 +508,19 @@ $wp_customize->add_section( 'header_settings_section', array(
    	      		'label' => 'Paragraph Font Color',
    	      		'section' => 'typography_section',
    	      		'settings' => 'paragraph_font_color',
-   				'priority' => 6,
+   				'priority' => 15,
    	      	) ) );	
+			
+			$wp_customize->add_setting( 'paragraph_font_size', array(
+					'default' => '',
+			    ) );
+
+			$wp_customize->add_control( 'paragraph_font_size', array(
+			        'label' => 'Paragraph Font Size',
+			        'section' => 'typography_section',
+			        'type' => 'text',
+					'priority' => 16,
+			    ) );
    
 /**
 * Link Colors
@@ -610,9 +756,19 @@ function customizer_head_styles() {
   	  $body_font = get_theme_mod( 'body_font' );
   	  $body_font_weight = get_theme_mod( 'body_font_weight' );
   	  $body_text_color = get_theme_mod( 'body_text_color' );
+  	  $body_font_size = get_theme_mod( 'body_font_size' );
+  	  $h1_font = get_theme_mod( 'h1_font' );
+  	  $h1_font_weight = get_theme_mod( 'h1_font_weight' );
+  	  $h1_font_color = get_theme_mod( 'h1_font_color' );
+  	  $h1_font_size = get_theme_mod( 'h1_font_size' );
+  	  $h2_font = get_theme_mod( 'h2_font' );
+  	  $h2_font_weight = get_theme_mod( 'h2_font_weight' );
+  	  $h2_font_color = get_theme_mod( 'h2_font_color' );
+  	  $h2_font_size = get_theme_mod( 'h2_font_size' );
   	  $paragraph_font = get_theme_mod( 'paragraph_font' );
   	  $paragraph_font_weight = get_theme_mod( 'paragraph_font_weight' );
   	  $paragraph_font_color = get_theme_mod( 'paragraph_font_color' );
+  	  $paragraph_font_size = get_theme_mod( 'paragraph_font_size' );
 	  $custom_css = get_theme_mod( 'custom_css' );
 	  ?>
 	  
@@ -630,8 +786,10 @@ function customizer_head_styles() {
 		.inner-header { height: <?php echo $header_height; ?> !important; }
 		.navbar-default .navbar-nav > li > a { color: <?php echo $navbar_text_color; ?>;font-weight:300; }
 		.header-navigation ul li a, .social-media-icons a { color: <?php echo $topnav_text_color; ?>;font-weight:300; }
-		body { font-family: '<?php echo $body_font; ?>';font-weight: <?php echo $body_font_weight; ?>;color: <?php echo $body_font_color ?> ; }
-		p { font-family: '<?php echo $paragraph_font; ?>';font-weight: <?php echo $paragraph_font_weight; ?>;color: <?php echo $paragraph_font_color ?> ; }
+		body { font-family: '<?php echo $body_font; ?>';font-weight: <?php echo $body_font_weight; ?>;font-size: <?php echo $body_font_size; ?>;color: <?php echo $body_font_color ?> ; }
+		h1 { font-family: '<?php echo $h1_font; ?>';font-weight: <?php echo $h1_font_weight; ?>;font-size: <?php echo $h1_font_size; ?>;color: <?php echo $h1_font_color ?> ; }
+		h2 { font-family: '<?php echo $h2_font; ?>';font-weight: <?php echo $h2_font_weight; ?>;font-size: <?php echo $h2_font_size; ?>;color: <?php echo $h2_font_color ?> ; }		
+		p { font-family: '<?php echo $paragraph_font; ?>';font-weight: <?php echo $paragraph_font_weight; ?>;font-size: <?php echo $paragraph_font_size; ?>;color: <?php echo $paragraph_font_color ?> ; }
 		<?php echo $custom_css; ?>
 	</style>
 
@@ -695,4 +853,3 @@ function s2_base_sanitize_integer( $input ) {
         return intval( $input );
     }
 }
-
